@@ -19,7 +19,8 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
 iron:router
-semantic:ui-css@2.0.4
 accounts-base
 accounts-password
 accounts-ui
+semantic:ui
+flemay:less-autoprefixer
