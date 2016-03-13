@@ -1,14 +1,9 @@
-<template name = "Home">
-
-<head>
-	<title>Agri-gator</title>
-</head>
-<body>
-	<div class="container">
-		<header>
-			<h1>Agri-gator</h1>
-		 	{{> loginButtons}}
-		</header>
-	</div>
-</body>
+<template name="Home">
+<div>"Testing"</div>
+	{{#if currentUser}}
+		{{logoutForm}}
+	{{else}}
+		{{> register}}
+		{{login}}
+	{{/if}}
 </template>
