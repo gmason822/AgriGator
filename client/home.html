@@ -1,0 +1,24 @@
+<template name="Home">
+
+
+{{>Header}}
+<div class="ui page">
+  <div class="ui centered container">
+    <div class="equal column" style="padding-top: 2%; padding-bottom: 2%;">
+      <div class = "ui three column centered relaxed grid" style="padding: 2%;"
+	   <div class="ui two column centered relaxed grid">
+	     <div class = "ui column">
+	       {{>Description}}
+      </div>
+      {{#if loggedin}}
+      <div class="ui column">
+      </div>
+      {{else}}
+      <div class="ui middle aligned center aligned column">{{>Login}}</div>
+      {{/if}}
+    </div>
+  </div>
+</div>
+</div>
+
+</template>
