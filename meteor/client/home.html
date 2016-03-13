@@ -1,10 +1,9 @@
 <template name="Home">
 <div>"Testing"
 	{{#if currentUser}}
-		{{logoutForm}}
+		{{> dashboard}}
 	{{else}}
-		{{> register}}
-		{{login}}
+		{{> login}}
 	{{/if}}
 </div>
 </template>
