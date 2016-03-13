@@ -1,0 +1,36 @@
+
+<template name="field_entry">
+	What work did you do?
+	 <select id = "task">
+		<option value='planting'>Planting</option>
+  		<option value="picking">Picking</option>
+		<option value="weeding">Weeding</option>
+  		<option value="pruning">Pruning</option>
+  		<option value="tying">Trying</option>
+  		<option value="deleafing">deleafing</option>
+	 </select>
+	<form id = "bed_plant" style="display:none;">
+		What size of bed did you plant in?
+		<select>
+			<option value="bed40">40</option>
+			<option value="bed80">80</option>
+		</select>
+	</form>
+
+	Did you fertilize?
+	<input type = "checkbox" checked="{{checked}}" name ="fert_check" id="fert_check" />
+
+	Did you water?
+	<input type = "checkbox" checked="{{checked}}" name="water_check" id="water_check" />
+
+	Did you put anything in the soil?
+	<input type = "checkbox" checked="{{checked}}" name="soil_check" id="soil_check" />
+
+	<form class = "soil-info" style="display:none;">
+		What did you put in the soil?
+		<input type ="text" name="soil-comp" placeholder="Type here"/>
+
+		How much did you put in the soil? (in cubic yards)
+		<input type ="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="soil-amount" placeholder="Type here" />
+	</form>
+</template> 
