@@ -1,9 +1,17 @@
 <template name="Home">
-<div>"Testing"
-	{{#if currentUser}}
-		{{> dashboard}}
-	{{else}}
-		{{> login}}
-	{{/if}}
-</div>
+  <div> 
+    {{#if currentUser}}
+    {{>Header}}
+    {{else}}
+    <div class="ui verticle segments">
+      <div class="ui right floated segment">
+	{{>login}}
+      </div>
+      <div class="ui green; top-padding: 75%">
+	{{>Description}}
+      </div>
+    </div>
+    {{/if}}
+    
+  </div>
 </template>
